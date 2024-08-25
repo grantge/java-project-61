@@ -1,7 +1,14 @@
 package hexlet.code;
 
-public class App {
-    public static void main(String[] args) {
-        Cli.greet();
+class App {
+
+    /**
+     *  Основной метод приложения.
+     */
+
+    private final Cli message = new Cli();
+
+    private void app() {
+        message.greet();
     }
 }
